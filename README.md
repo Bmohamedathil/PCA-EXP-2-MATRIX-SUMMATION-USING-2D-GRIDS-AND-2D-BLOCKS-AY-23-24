@@ -1,22 +1,22 @@
 # PCA-EXP-2-Matrix-Summation-using-2D-Grids-and-2D-Blocks-AY-23-24
 
 <h3>NAME : MOHAMED ATHIL B</h3>
-<h3>REG NO : 212222230081</h3>
-<h3>EX. NO : 2</h3>
-<h3>DATE:16.09.2024</h3>
+<h3>REGISTER NO : 212222230081</h3>
+<h3>EX NO : 02</h3>
+<h3>DATE : 16.09.2024</h3>
 <h1> <align=center> MATRIX SUMMATION WITH A 2D GRID AND 2D BLOCKS </h3>
 i.  Use the file sumMatrixOnGPU-2D-grid-2D-block.cu
   
 ii. Matrix summation with a 2D grid and 2D blocks. Adapt it to integer matrix addition. Find the best execution configuration. </h3>
 
-## AIM:
+## AIM :
 To perform  matrix summation with a 2D grid and 2D blocks and adapting it to integer matrix addition.
 
-## EQUIPMENTS REQUIRED:
+## EQUIPMENTS REQUIRED :
 Hardware – PCs with NVIDIA GPU & CUDA NVCC
 Google Colab with NVCC Compiler
 
-## PROCEDURE:
+## PROCEDURE :
 
 1.	Initialize the data: Generate random data for two input arrays using the initialData function.
 2.	Perform the sum on the host: Use the sumMatrixOnHost function to calculate the sum of the two input arrays on the host (CPU) for later verification of the GPU results.
@@ -31,7 +31,7 @@ Google Colab with NVCC Compiler
 11.	Free the host memory: Deallocate the memory that was previously allocated on the host.
 12.	Reset the device: Reset the device using cudaDeviceReset to ensure that all resources are cleaned up before the program exits.
 
-## PROGRAM:
+## PROGRAM :
 ```C
 %%cuda
 #include <cuda_runtime.h>
@@ -248,9 +248,9 @@ return (0);
 
 ````
 
-## OUTPUT:
+## OUTPUT :
 
 ![Screenshot 2024-09-16 112415](https://github.com/user-attachments/assets/08087e16-bb9a-4f53-b7cc-b9a5ad677b7c)
 
-## RESULT:
+## RESULT :
 The host took  0.836150 seconds to complete it’s computation, while the GPU outperforms the host and completes the computation in 0.128081 seconds. Therefore, float variables in the GPU will result in the best possible result. Thus, matrix summation using 2D grids and 2D blocks has been performed successfully.
